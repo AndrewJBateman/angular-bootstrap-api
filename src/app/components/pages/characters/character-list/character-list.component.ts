@@ -31,11 +31,8 @@ export class CharacterListComponent implements OnInit {
   showGoUpButton = false;
 
   private pageNum = 1;
-
   private query: string;
-
   private hideScrollHeight = 200;
-
   private showScrollHeight = 500;
 
   constructor(
