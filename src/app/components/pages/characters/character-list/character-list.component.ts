@@ -1,9 +1,10 @@
 import { DOCUMENT } from '@angular/common';
+import { Component, HostListener, Inject, OnInit } from '@angular/core';
 import {
-  Component, HostListener, Inject, OnInit,
-} from '@angular/core';
-import {
-  ActivatedRoute, NavigationEnd, ParamMap, Router,
+  ActivatedRoute,
+  NavigationEnd,
+  ParamMap,
+  Router,
 } from '@angular/router';
 
 import { filter, take } from 'rxjs/operators';
@@ -20,7 +21,6 @@ type RequestInfo = {
   templateUrl: './character-list.component.html',
   styleUrls: ['./character-list.component.scss'],
 })
-
 export class CharacterListComponent implements OnInit {
   characters: Character[] = [];
 
@@ -36,36 +36,46 @@ export class CharacterListComponent implements OnInit {
   private showScrollHeight = 500;
 
   constructor(
-    @Inject(DOCUMENT) private document:Document,
+    @Inject(DOCUMENT) private document: Document,
     private characterSvce: CharacterService,
     private route: ActivatedRoute,
-    private router: Router,
+    private router: Router
   ) {
     this.onUrlChanged();
   }
-
+  // function ran in initialisation because search query routes to this page
   ngOnInit(): void {
     this.getCharactersByQuery();
   }
 
   @HostListener('window:scroll', [])
-  onWindowScroll():void {
+  onWindowScroll(): void {
     const yOffSet = window.pageYOffset;
-    if ((yOffSet || this.document.documentElement.scrollTop || this.document.body.scrollTop) > this.showScrollHeight) {
+    if (
+      (yOffSet ||
+        this.document.documentElement.scrollTop ||
+        this.document.body.scrollTop) > this.showScrollHeight
+    ) {
       this.showGoUpButton = true;
-    } else if (this.showGoUpButton && (yOffSet || this.document.documentElement.scrollTop || this.document.body.scrollTop) < this.hideScrollHeight) {
+    } else if (
+      this.showGoUpButton &&
+      (yOffSet ||
+        this.document.documentElement.scrollTop ||
+        this.document.body.scrollTop) < this.hideScrollHeight
+    ) {
       this.showGoUpButton = false;
     }
   }
 
-  onScrollDown():void{
+  // scrolling down increments page number which is used in another http request for the next page of data
+  onScrollDown(): void {
     if (this.info.next) {
       this.pageNum++;
       this.getDataFromService();
     }
   }
 
-  onScrollTop():void{
+  onScrollTop(): void {
     this.document.body.scrollTop = 0; // Safari
     this.document.documentElement.scrollTop = 0; // Other
   }
@@ -80,6 +90,7 @@ export class CharacterListComponent implements OnInit {
       });
   }
 
+  // function carried out each time page loaded - with search query or returns entire list
   private getCharactersByQuery(): void {
     this.route.queryParams.pipe(take(1)).subscribe((params: ParamMap) => {
       this.query = params['q'];
@@ -87,18 +98,22 @@ export class CharacterListComponent implements OnInit {
     });
   }
 
+  // fetch search results via http service
   private getDataFromService(): void {
     this.characterSvce
       .searchCharacters(this.query, this.pageNum)
       .pipe(take(1))
-      .subscribe((res: any) => {
-        if (res?.results?.length) {
-          const { info, results } = res;
-          this.characters = [...this.characters, ...results];
-          this.info = info;
-        } else {
-          this.characters = [];
-        }
-      }, (error:TrackHttpError) => console.log((error.friendlyMessage)));
+      .subscribe(
+        (res: any) => {
+          if (res?.results?.length) {
+            const { info, results } = res;
+            this.characters = [...this.characters, ...results];
+            this.info = info;
+          } else {
+            this.characters = [];
+          }
+        },
+        (error: TrackHttpError) => console.log(error.friendlyMessage)
+      );
   }
 }

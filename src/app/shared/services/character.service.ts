@@ -16,7 +16,7 @@ export class CharacterService {
 
   searchCharacters(
     query = '',
-    page = 200
+    page = 1
   ): Observable<Character[] | TrackHttpError> {
     const filter = `${environment.baseUrl}/?name=${query}&page=${page}`;
     return this.http
@@ -24,19 +24,20 @@ export class CharacterService {
       .pipe(catchError((err) => this.handleHttpError(err)));
   }
 
-  getDetails(id: number) {
+  getDetails(id: number): any {
     return this.http
       .get<Character>(`${environment.baseUrl}/${id}`)
       .pipe(catchError((err) => this.handleHttpError(err)));
   }
 
+  // return an observable class with emitted error info.
   private handleHttpError(
     error: HttpErrorResponse
   ): Observable<TrackHttpError> {
-    let dataError = new TrackHttpError();
+    const dataError = new TrackHttpError();
     dataError.errorNumber = error.status;
     dataError.message = error.statusText;
-    dataError.friendlyMessage = 'An error occured retrienving data.';
+    dataError.friendlyMessage = 'An error occured while retrieving data.';
     return throwError(dataError);
   }
 }

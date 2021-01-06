@@ -1,5 +1,5 @@
 export class TrackHttpError{
-  errorNumber:number;
+  errorNumber: number;
   message: string;
   friendlyMessage: string;
 }
