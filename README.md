@@ -2,8 +2,12 @@
 
 * Simple responsive app to fetch API data and display it using RxJS observables and infinite-scrolling
 * Code from [DominiCode, in Spanish](https://www.youtube.com/channel/UC3QuZuJr2_EOUak8bWUd74A) - see [Inspiration](#inspiration) below, with my modifications
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-**\* Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-bootstrap-api?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-bootstrap-api?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-bootstrap-api?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-bootstrap-api?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -28,11 +32,11 @@
 
 ## :signal_strength: Technologies
 
-* [Angular framework v11](https://angular.io/)
-* [Bootstrap v4](https://getbootstrap.com/)
-* [jQuery v3](https://jquery.com/download/) required by Bootstrap.
+* [Angular framework v12](https://angular.io/)
+* [Bootstrap v5](https://getbootstrap.com/)
+* [jQuery v4](https://jquery.com/download/) required by Bootstrap.
 * [ngx-infinite-scroll v10](https://www.npmjs.com/package/ngx-infinite-scroll)
-* [@popperjs/core](https://www.npmjs.com/package/@popperjs/core) Tooltip & Popover Positioning Engine
+* [@popperjs/core v2](https://www.npmjs.com/package/@popperjs/core) Tooltip & Popover Positioning Engine
 
 ## :floppy_disk: Setup - Frontend
 
@@ -71,9 +75,9 @@
 
 ## :clipboard: Status, Testing & To-Do List
 
-* Status: Working using test API data. Deployed. Lighthouse score could be improved.
+* Status: Working. Updated may 2021
 * Testing: all files pass linting. No unit or end-to-end tests added by myself.
-* To-Do: replace API, improve lighthouse score. Add unit testing
+* To-Do: fix menu toggle, improve lighthouse score. Add unit testing
 
 ## :clap: Inspiration/General Tools
 
