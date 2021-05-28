@@ -24,7 +24,7 @@ export class CharacterService {
       .pipe(catchError((err) => this.handleHttpError(err)));
   }
 
-  getDetails(id: number): any {
+  getDetails(id: number): Observable<any> {
     return this.http
       .get<Character>(`${environment.baseUrl}/${id}`)
       .pipe(catchError((err) => this.handleHttpError(err)));
