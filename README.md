@@ -75,9 +75,9 @@
 
 ## :clipboard: Status, Testing & To-Do List
 
-* Status: Working. Updated may 2021
+* Status: Working. Previous version deployed to `https://pwa-apidata.web.app`. Updated may 2021.
 * Testing: all files pass linting. No unit or end-to-end tests added by myself.
-* To-Do: fix menu toggle, improve lighthouse score. Add unit testing
+* To-Do: fix menu toggle, improve lighthouse score. Add unit testing.
 
 ## :clap: Inspiration/General Tools
 
@@ -87,6 +87,10 @@
 * [Ricky & Morty documentation](https://rickandmortyapi.com/documentation/)
 * [Logrocket: 5 tricks to eliminate render blocking resources](https://blog.logrocket.com/5-tricks-to-eliminate-render-blocking-resources/)
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
