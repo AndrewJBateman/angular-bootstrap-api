@@ -11,15 +11,18 @@
 
 ## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
-
+* [Angular Bootstrap API](#angular-bootstrap-api)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:file_folder: License](#file_folder-license)
+  * [:envelope: Contact](#envelope-contact)
 ## :books: General info
 
 * Displays list of API data on Bootstrap cards
@@ -38,7 +41,7 @@
 * [ngx-infinite-scroll v10](https://www.npmjs.com/package/ngx-infinite-scroll)
 * [@popperjs/core v2](https://www.npmjs.com/package/@popperjs/core) Tooltip & Popover Positioning Engine
 
-## :floppy_disk: Setup - Frontend
+## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
 * Run `ng serve` for a dev server. Frontend will open at `http://localhost:4200/` - refreshes on code changes
@@ -75,7 +78,7 @@
 
 ## :clipboard: Status, Testing & To-Do List
 
-* Status: Working. Previous version deployed to `https://pwa-apidata.web.app`. Updated may 2021.
+* Status: Working. Previous version deployed to `https://pwa-apidata.web.app`.
 * Testing: all files pass linting. No unit or end-to-end tests added by myself.
 * To-Do: fix menu toggle, improve lighthouse score. Add unit testing.
 
