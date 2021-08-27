@@ -23,6 +23,7 @@
   * [:clap: Inspiration](#clap-inspiration)
   * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
+  
 ## :books: General info
 
 * Displays list of API data on Bootstrap cards
