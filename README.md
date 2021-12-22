@@ -23,7 +23,7 @@
   * [:clap: Inspiration](#clap-inspiration)
   * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
-  
+
 ## :books: General info
 
 * Displays list of API data on Bootstrap cards
@@ -36,7 +36,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular framework v12](https://angular.io/)
+* [Angular framework v13](https://angular.io/)
 * [Bootstrap v5](https://getbootstrap.com/)
 * [jQuery v4](https://jquery.com/download/) required by Bootstrap.
 * [ngx-infinite-scroll v10](https://www.npmjs.com/package/ngx-infinite-scroll)
@@ -46,9 +46,8 @@
 
 * Install dependencies using `npm i`
 * Run `ng serve` for a dev server. Frontend will open at `http://localhost:4200/` - refreshes on code changes
-* Run `npm run lint` to lint test entire codebase using TSLint.
+* Run `npm run build` to create a build folder in 'dist'
 * Run `firebase deploy` to deploy to Google Firebase Hosting
-* Run `npm outdated` to see if any npm dependencies are outdated.
 
 ## :wrench: Testing
 
@@ -81,7 +80,7 @@
 
 * Status: Working. Previous version deployed to `https://pwa-apidata.web.app`.
 * Testing: all files pass linting. No unit or end-to-end tests added by myself.
-* To-Do: fix menu toggle, improve lighthouse score. Add unit testing.
+* To-Do: improve lighthouse score. Add unit testing.
 
 ## :clap: Inspiration/General Tools
 
@@ -90,6 +89,7 @@
 * [Domini Code: #programadores #angular #aprenderAngular #desarrolloWeb HttpHandler - ANGULAR 10](https://www.youtube.com/watch?v=-x_tQKNOpzI)
 * [Ricky & Morty documentation](https://rickandmortyapi.com/documentation/)
 * [Logrocket: 5 tricks to eliminate render blocking resources](https://blog.logrocket.com/5-tricks-to-eliminate-render-blocking-resources/)
+* [stackoverflow: Navbar dropdown (collapse) is not working in Bootstrap 5](https://stackoverflow.com/questions/65341620/navbar-dropdown-collapse-is-not-working-in-bootstrap-5)
 
 ## :file_folder: License
 
