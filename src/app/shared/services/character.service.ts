@@ -38,6 +38,8 @@ export class CharacterService {
     dataError.errorNumber = error.status;
     dataError.message = error.statusText;
     dataError.friendlyMessage = 'An error occured while retrieving data.';
-    return throwError(dataError);
+    return throwError(() => {
+      throw(dataError)
+    });
   }
 }

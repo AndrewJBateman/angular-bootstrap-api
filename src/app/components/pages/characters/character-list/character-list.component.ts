@@ -103,8 +103,8 @@ export class CharacterListComponent implements OnInit {
     this.characterSvce
       .searchCharacters(this.query, this.pageNum)
       .pipe(take(1))
-      .subscribe(
-        (res: any) => {
+      .subscribe({
+        next: (res: any) => {
           if (res?.results?.length) {
             const { info, results } = res;
             this.characters = [...this.characters, ...results];
@@ -113,7 +113,12 @@ export class CharacterListComponent implements OnInit {
             this.characters = [];
           }
         },
-        (error: TrackHttpError) => console.log(error.friendlyMessage)
-      );
+        error: (error) => {
+          (error: TrackHttpError) => console.log(error.friendlyMessage);
+        },
+        complete: () => {
+          console.log('Request complete');
+        },
+      });
   }
 }
