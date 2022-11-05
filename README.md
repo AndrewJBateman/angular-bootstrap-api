@@ -89,8 +89,8 @@
 * [Domini Code: Consumiendo API REST - Angular 10 - Rick and Morty API](https://www.youtube.com/watch?v=hGU2ceM8aVY)
 * [Domini Code: Como convertir una app en Angular 10 a PWA](https://www.youtube.com/watch?v=jI0eR95U0Z0)
 * [Domini Code: #programadores #angular #aprenderAngular #desarrolloWeb HttpHandler - ANGULAR 10](https://www.youtube.com/watch?v=-x_tQKNOpzI)
-* [Ricky & Morty documentation](https://rickandmortyapi.com/documentation/)
-* [Logrocket: 5 tricks to eliminate render blocking resources](https://blog.logrocket.com/5-tricks-to-eliminate-render-blocking-resources/)
+* [Ricky & Morty API documentation](https://rickandmortyapi.com/documentation/)
+* [Logrocket: 9 tricks to eliminate render blocking resources](https://blog.logrocket.com/5-tricks-to-eliminate-render-blocking-resources/)
 * [stackoverflow: Navbar dropdown (collapse) is not working in Bootstrap 5](https://stackoverflow.com/questions/65341620/navbar-dropdown-collapse-is-not-working-in-bootstrap-5)
 
 ## :file_folder: License
