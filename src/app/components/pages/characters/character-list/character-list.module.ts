@@ -10,4 +10,4 @@ import { CharacterListRoutingModule } from './character-list-routing.module';
     CharacterListRoutingModule
   ]
 })
-export class CharacterListModule { }
+export default class CharacterListModule { }

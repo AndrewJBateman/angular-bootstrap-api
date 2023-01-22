@@ -9,4 +9,4 @@ import { CharactersModule } from '@characters/characters.module';
   declarations: [HomeComponent],
   imports: [CommonModule, HomeRoutingModule, CharactersModule],
 })
-export class HomeModule {}
+export default class HomeModule {}

@@ -10,4 +10,4 @@ import { CharacterDetailsRoutingModule } from './character-details-routing.modul
     CharacterDetailsRoutingModule
   ]
 })
-export class CharacterDetailsModule { }
+export default class CharacterDetailsModule { }

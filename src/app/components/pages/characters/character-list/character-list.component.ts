@@ -18,8 +18,7 @@ type RequestInfo = {
 };
 @Component({
   selector: 'app-character-list',
-  templateUrl: './character-list.component.html',
-  styleUrls: ['./character-list.component.scss'],
+  templateUrl: './character-list.component.html'
 })
 export class CharacterListComponent implements OnInit {
   characters: Character[] = [];
