@@ -4,11 +4,21 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@app/*": ["src/app/*"],
-      "@shared/*": ["src/app/shared/*"],
-      "@environment/*": ["src/environments/*"],
-      "@characters/*": ["src/app/components/pages/characters/*"],
-      "@pages/*": ["src/app/components/pages/*"]
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
+      "@environment/*": [
+        "src/environments/*"
+      ],
+      "@characters/*": [
+        "src/app/components/pages/characters/*"
+      ],
+      "@pages/*": [
+        "src/app/components/pages/*"
+      ]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
@@ -17,11 +27,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2020",
+    "target": "ES2022",
     "module": "es2020",
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "useDefineForClassFields": false
   }
 }
