@@ -37,10 +37,10 @@
 
 ## :signal_strength: Technologies
 
-* [Angular framework v14](https://angular.io/)
+* [Angular framework v15](https://angular.io/)
 * [Bootstrap v5](https://getbootstrap.com/)
 * [jQuery v3](https://jquery.com/download/) required by Bootstrap.
-* [ngx-infinite-scroll v14](https://www.npmjs.com/package/ngx-infinite-scroll)
+* [ngx-infinite-scroll v15](https://www.npmjs.com/package/ngx-infinite-scroll)
 * [@popperjs/core v2](https://www.npmjs.com/package/@popperjs/core) Tooltip & Popover Positioning Engine
 
 ## :floppy_disk: Setup
@@ -52,9 +52,7 @@
 
 ## :wrench: Testing
 
-* Run `ng test` to run Jasmine unit tests via [Karma](https://karma-runner.github.io)
-* Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-)
+* N/A
 
 ## :computer: Code Examples (by DominiCode)
 
@@ -82,7 +80,7 @@
 
 * Status: Working. Previous version deployed to `https://pwa-apidata.web.app`.
 * Testing: all files pass linting. No unit or end-to-end tests added by myself.
-* To-Do: improve lighthouse score. Add unit testing.
+* To-Do: Nothing
 
 ## :clap: Inspiration/General Tools
 
